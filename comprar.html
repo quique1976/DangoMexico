@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Articulos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/libs/codificaHtml.js"></script>
+        <script src="js/libs/evento.js"></script>
+        <script src="js/ctrlError.js"></script>
+      </head>
+      
+    <body>
+      <header>
+          <div id="menu">
+              <div> 
+                  <a href="index.html"><img id="imgmenu" src="images/logo-dango.png" alt="Dango" align="left" width="262" height="105"></a>
+                  <a href="servicios.html"><img id="atras" src="images/cerrar_poster_u1442.png" alt="Dango" align="right" width="80" height="30"></a>
+              </div>
+          </div>
+      </header>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>Servicios</h1>
+      <p><em>El borde azul indica un campo obligatorio.</em></p>
+      <form id="forma" action="javascript:;">
+
+        <p>
+        <label for="clave" accesskey="C">Clave: </label>
+        <input id="clave" type="text" required disabled="disabled" size="16">
+        </p>
+
+        <p>
+            <label for="nombre" accesskey="N">Nombre: </label>
+            <select id="nombre" required>
+                <option value="">Selecciona Servicio</option>
+                <option value="Paquete Diamante">Paquete Diamante</option>
+                <option value="Paquete Gold">Paquete Gold</option>
+                <option value="Paquete Platino">Paquete Platino</option>
+                <option value="Paquete Bronce">Paquete Bronce</option>
+            </select>
+        </p>
+        <div id="nuevo">
+        <p>
+          <label for="tiempo" accesskey="T">Tiempo: </label>
+          <input id="tiempo" type="number" required max="12" min="1" placeholder="Meses">
+        </p>
+        <p>
+          <label for="precio" accesskey="P">Precio: </label>
+          <input id="precio" type="text" placeholder="Mensual" size="16" required disabled="disabled">
+        </p>
+        <p>
+          <label for="fecha" accesskey="F">Fecha: </label>
+          <input id="fecha" type="date" required min="2017-11-29">
+        </p>
+        </div>
+        <p>
+            <label><input name="Registrar" type="button" value="Registrar" accesskey="R"></label>
+            <label><input name="Borrar" type="button" value="Borrar" accesskey="B"></label>
+            <label><input name="Modificar" type="button" value="Modificar" accesskey="M"></label>
+        </p>
+            
+      </form>
+      <br>
+      <br>
+      <div id="tabla">
+      <h1>Shopping Car</h1>
+      <table>
+        <thead>
+            <tr><th>&nbsp;&nbsp; Clave &nbsp;&nbsp;</th><th>&nbsp;&nbsp; Nombre &nbsp;&nbsp;</th><th>&nbsp;&nbsp; Tiempo &nbsp;&nbsp;
+            </th><th>&nbsp;&nbsp; Precio &nbsp;&nbsp;</th><th>&nbsp;&nbsp; Fecha &nbsp;&nbsp;</th><th>&nbsp;&nbsp; Subtotal &nbsp;&nbsp;</th></tr>
+        </thead>
+        <tbody id="listado"></tbody>
+      </table>
+      <p style="text-align: left"><br><b>&nbsp;&nbsp;&nbsp; Precio total: </b><output id="salida"></output></p>
+      <br>
+      </div>
+      <footer>
+        <div id="pie">
+            <br>
+            <br>
+            <div>
+                <a href="index.html"><img id="padding" src="images/u11403_states.png" alt="Home" align="left" height="20" width="79"></a>
+                <a href="promociones.html"><img src="images/u11408_states.png" alt="Promociones" align="left" height="20" width="128"></a>
+                <a href="servicios.html"><img src="images/u11417_states.png" alt="Servicios" align="left" height="20" width="113"></a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="redes">
+                <a href="https://www.facebook.com/DangoMexico/"><img src="images/facebook.png" alt="facebook" align="left" height="50" width="50"></a>
+                <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter" align="left" height="50" width="50"></a>
+                <a href="https://web.whatsapp.com/"><img src="images/whatsapp.png" alt="whatsapp" align="left" height="50" width="50"></a>
+                <a href="https://www.instagram.com/dangomexico/?hl=es-la"><img src="images/instagram.png" alt="instagram" align="left" height="50" width="50"></a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+                <em>Este sitio Web es Propiedad de Dango Mexico Company. Todos los Derechos Reservados. Copyright 2017.</em>
+            </p>
+      </div>
+      </footer>
+      <script src="js/ctrlArticulos.js"></script>
+      <script src="js/daoArticulosSql.js"></script>
+      <script src="js/BotonP.js"></script>
+    </body>
+  </html>
